@@ -9,10 +9,10 @@ const TeamOption = () => {
     <>
       <h1>Create Your Team</h1>
       <select className="form-select" value={selectedTeamName} onChange={handleSelectedTeamName}>
-        <option value="dragon">Dragon</option>
-        <option value="eagle">Eagle</option>
-        <option value="snake">Snake</option>
-        <option value="wolf">Wolf</option>
+        <option value="Dragon">Dragon</option>
+        <option value="Eagle">Eagle</option>
+        <option value="Snake">Snake</option>
+        <option value="Wolf">Wolf</option>
       </select>
     </>
   );

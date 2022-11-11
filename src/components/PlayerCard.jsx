@@ -2,22 +2,19 @@ import React from "react";
 import { useAllocationContext } from "../context/AllocationContext";
 
 const PlayerCard = ({ eachPlayer }) => {
-  const {selectedTeamName} = useAllocationContext()
+  const { selectedTeamName, handleAfterClickCard } = useAllocationContext();
   const { id, teamName, nation, name, img } = eachPlayer;
-
 
   return (
     <div
-    // onClick={(e)=>console.log(e.currentTarget.id)}
-    onClick={(e)=>console.log(e.currentTarget.id)}
-
+      onClick={handleAfterClickCard}
       className={
-        teamName.toLowerCase() !== selectedTeamName.toLowerCase() ? 'card' : 'card standout'
+        teamName.toLowerCase() !== selectedTeamName.toLowerCase()
+          ? "card"
+          : "card standout"
       }
-      
       id={id}
       style={{ cursor: "pointer" }}
-
     >
       <img
         src={img}
