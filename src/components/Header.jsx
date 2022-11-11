@@ -22,8 +22,8 @@ const Header = () => {
             <Link className="nav-link" aria-current="page" to='/'>
               Create Team 
             </Link>
-            <Link className="nav-link" to='/showTeam'>
-              Show Team
+            <Link className="nav-link" to='/groupedTeam'>
+              Grouped Teams
             </Link>
 
           </div>
