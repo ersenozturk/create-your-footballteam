@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="footer  mt-auto py-3 bg-light">
+      <div className="container">
+        <div className="position-sticky bottom-0">Footer</div>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

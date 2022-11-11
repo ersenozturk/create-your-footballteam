@@ -1,17 +1,12 @@
 import "./App.css";
-import Context from "./components/Context";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Person from "./components/Person";
+import { AllocationProvider } from "./context/AllocationContext";
+import AppRouter from "./router/AppRouter";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Context />
-      <Person/>
-      <Footer />
-    </div>
+    <AllocationProvider>
+      <AppRouter />
+    </AllocationProvider>
   );
 }
 

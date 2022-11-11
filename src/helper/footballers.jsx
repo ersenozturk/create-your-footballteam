@@ -17,7 +17,7 @@ import haaland from '../assets/erling-haaland.jpg'
 export const footballers = [
   {
     id: 1,
-    name: "Cristiano Ronaldo",
+    name: "C.Ronaldo",
     nation: "Portugal",
     teamName: "Dragon",
     img:ronaldo
