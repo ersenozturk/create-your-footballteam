@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 import { footballers } from "../helper/footballers";
 
 //! create-context
@@ -6,10 +6,14 @@ export const AllocationContext = createContext();
 
 //! provide-context
 export const AllocationProvider = ({ children }) => {
-  const footballersArr = footballers;
 
-  const users = "";
-  const values = { users };
+    const [selectedTeamName, setselectedTeamName] = useState('wolf')
+    const handleSelectedTeamName = (e) => {
+        setselectedTeamName(e.target.value)
+    }
+
+
+  const values = { footballers,selectedTeamName,setselectedTeamName,handleSelectedTeamName };
 
   return (
     <AllocationContext.Provider value={values}>
